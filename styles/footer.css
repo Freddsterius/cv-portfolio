@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-container {
+  background-color: #32adff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer-container h4 {
+  color: #ffffff;
+  padding-block: 0.7rem;
+  font-size: 0.7rem;
+}
+
+.media-container {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
