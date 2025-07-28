@@ -50,6 +50,7 @@ main {
 }
 .home-card-text-container p {
   padding: 0.2rem;
+  font-size: 0.8rem;
 }
 
 .skills-container {
@@ -138,9 +139,10 @@ main {
 
 .portfolio-group-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 a {
