@@ -50,7 +50,7 @@ main {
 }
 .home-card-text-container p {
   padding: 0.2rem;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }
 
 .skills-container {
@@ -150,7 +150,7 @@ a {
 }
 
 .portfolio-card {
-  border: 2px solid rgb(255, 0, 0);
+  border: 2px solid rgb(47, 0, 255);
   border-radius: 8px;
 
   min-width: 200px;
@@ -160,7 +160,7 @@ a {
   background-color: rgb(255, 255, 255);
 }
 .portfolio-card:hover {
-  border: 3px solid rgb(51, 255, 0);
+  border: 2px solid rgb(51, 255, 0);
   cursor: pointer;
 }
 
@@ -191,15 +191,17 @@ a {
 
 .portfolio-text-container button {
   background-color: yellow;
-  border: 1px solid red;
+  border: 1px solid rgb(0, 0, 0);
   border-radius: 5px;
-  padding: 2px 5px;
+  padding: 0.3rem 0.6rem;
   position: absolute;
-  left: 15px;
-  bottom: 10px;
+  left: 1rem;
+  bottom: 0.9rem;
 }
 .portfolio-text-container button:hover {
-  background-color: rgb(0, 255, 98);
-  border: 1px solid rgb(68, 0, 255);
+  opacity: 0.5;
   cursor: pointer;
+}
+.portfolio-text-container button:active {
+  opacity: 0.5;
 }
