@@ -19,7 +19,7 @@ body {
 }
 
 main {
-  margin-inline: 2rem;
+  margin-inline: 1rem;
   padding-top: 6rem;
   padding-bottom: 1rem;
   background-color: rgb(248, 252, 230);
@@ -238,4 +238,4 @@ h4 {
 
 /*extra extra large*/
 @media (min-width: 1400px) {
-}
+}.2
