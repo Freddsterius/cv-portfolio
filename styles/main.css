@@ -19,16 +19,30 @@ body {
 }
 
 main {
-  padding-top: 4rem;
+  margin-inline: 2rem;
+  padding-top: 6rem;
   padding-bottom: 1rem;
   background-color: rgb(248, 252, 230);
+}
+h2 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 2.1rem;
+  padding: 0.5rem 1rem;
+}
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 0.5rem;
+}
+h4 {
+  color: red;
 }
 
 .home-card-container {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  margin-inline: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
 }
@@ -40,8 +54,10 @@ main {
   height: auto;
   width: 100%;
 }
-.home-card-image-container p {
+.home-card-image-container h1 {
   color: rgb(255, 238, 0);
+  font-size: 2rem;
+
   position: absolute;
   left: 0.7rem;
   bottom: 1rem;
@@ -49,21 +65,22 @@ main {
 
 .home-card-text-container {
   background-color: rgb(255, 255, 255);
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
 }
 .home-card-text-container p {
   padding: 0.2rem;
-  font-size: 0.9rem;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  line-height: 1.6rem;
 }
 
 .skills-container {
   background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  margin-inline: 1rem;
   margin-bottom: 1rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
+  padding-block: 0.5rem;
 }
 
 .core-skills-container,
@@ -74,8 +91,9 @@ main {
   flex-direction: column;
   align-items: flex-start;
   border-bottom: 1px solid black;
-  padding-bottom: 0.5rem;
+  padding-inline: 1rem;
 }
+
 #languages-container {
   border-bottom: none;
 }
@@ -87,10 +105,10 @@ main {
   width: 100%;
 }
 .skill p {
-  font-weight: 500;
+  padding: 0.2rem;
   color: rgb(0, 0, 0);
-  font-size: 0.9rem;
-  margin-bottom: 0.2rem;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
 }
 .progress-bar {
   background-color: rgb(238, 238, 238);
@@ -124,87 +142,100 @@ main {
 
 .portfolio-container {
   background-color: rgb(255, 255, 255);
-  display: flex;
-  flex-direction: column;
-  margin-inline: 1rem;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  padding: 0.5rem 1rem;
-  gap: 1rem;
-}
-.portfolio-container h2 {
-  color: rgb(0, 0, 0);
-  text-align: left;
-}
-.portfolio-container h3 {
-  color: rgb(0, 0, 0);
-  padding: 2rem 0 1rem 0.5rem;
 }
 
-.portfolio-group-container {
+.all-projects-container {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 5rem;
+}
+.single-group-projects-container {
+  padding-block: 1rem;
+}
+.single-group-projects-container h3 {
+  padding-left: 1rem;
+}
+.project-cards-container {
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
-a {
-  text-decoration: none;
-}
-
-.portfolio-card {
-  border: 2px solid rgb(47, 0, 255);
-  border-radius: 8px;
-
-  min-width: 200px;
-  width: 250px;
-  height: 400px;
-  position: relative;
+.project-card {
   background-color: rgb(255, 255, 255);
+  min-height: 23.75remx;
+  min-width: 16.25rem;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 5px;
 }
-.portfolio-card:hover {
-  border: 2px solid rgb(51, 255, 0);
-  cursor: pointer;
-}
-
-.portfolio-image-container {
+.project-card-image-container {
+  width: 100%;
+  height: auto;
   position: relative;
 }
-
-.portfolio-image-container img {
+.project-card-image-container img {
   width: 100%;
   height: auto;
 }
-.portfolio-image-container h4 {
-  padding-block: 0.5rem;
+.project-name {
+  font-size: 1.6rem;
   color: rgb(255, 255, 255);
   position: absolute;
-  left: 0.7rem;
-  bottom: 0.5rem;
-}
-
-.portfolio-text-container {
-  padding-inline: 1.1rem;
-}
-
-.portfolio-text-container p {
-  color: purple;
-  padding-block: 1rem 0.5rem;
-}
-
-.portfolio-text-container button {
-  background-color: yellow;
-  border: 1px solid rgb(0, 0, 0);
-  border-radius: 5px;
-  padding: 0.3rem 0.6rem;
-  position: absolute;
   left: 1rem;
-  bottom: 0.9rem;
+  bottom: 1rem;
 }
-.portfolio-text-container button:hover {
-  opacity: 0.5;
-  cursor: pointer;
+.project-card-text-container {
+  padding: 1rem;
 }
-.portfolio-text-container button:active {
-  opacity: 0.5;
+.project-description {
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+}
+.visit-btn {
+  color: rgb(0, 0, 0);
+  background-color: #f4ce14;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 0.75rem 3rem;
+  margin-top: 1rem;
+  border: none;
+  border-radius: 5px;
+}
+.visit-btn:hover {
+  background-color: pink;
+}
+.visit-btn:active {
+  background-color: rgb(68, 214, 55);
+}
+.project-description a {
+  text-decoration: none;
+}
+
+/* Pre-configured media quert breakpoints */
+/*small*/
+@media (min-width: 576px) {
+}
+
+/*medium*/
+@media (min-width: 768px) {
+}
+
+/*large*/
+@media (min-width: 992px) {
+}
+
+/*extra large*/
+@media (min-width: 1200px) {
+}
+
+/*extra extra large*/
+@media (min-width: 1400px) {
 }
