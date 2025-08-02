@@ -1,14 +1,4 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-.header-container {
-  background-color: #ffffff;
-}
-
 .navbar {
-  background-color: white;
   min-height: 4rem;
   width: 100%;
   display: flex;
@@ -22,6 +12,7 @@
   z-index: 1000;
   border-bottom: 1px solid black;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.4);
+  background-color: aliceblue;
 }
 
 .navbar li {

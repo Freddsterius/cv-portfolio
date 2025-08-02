@@ -1,0 +1,69 @@
+*,
+::before,
+::after {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  display: block; /* to prevent the wthite space below images*/
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+header {
+  background-color: #ffffff;
+}
+main {
+  background-color: rgb(255, 255, 255);
+  margin-inline: 1rem;
+  padding-top: 6rem;
+  padding-bottom: 1rem;
+}
+footer {
+  background-color: #32adff;
+}
+
+h2 {
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 2.1rem;
+  padding: 0.5rem 1rem;
+
+  /*small*/
+  @media (min-width: 576px) {
+  }
+
+  /*medium*/
+  @media (min-width: 768px) {
+  }
+
+  /*large*/
+  @media (min-width: 992px) {
+  }
+
+  /*extra large*/
+  @media (min-width: 1200px) {
+  }
+
+  /*extra extra large*/
+  @media (min-width: 1400px) {
+    font-size: 3.5rem;
+  }
+}
+h3 {
+  color: rgb(0, 0, 0);
+  font-size: 1.5rem;
+  padding: 1rem 0 1rem 0.5rem;
+}
+h4 {
+  color: red;
+}

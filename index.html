@@ -1,15 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt">
   <head>
+    <!--HTML Meta Tags-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CV/Portfolio</title>
+    <meta name="title" content="Portfolio do Raimundo" />
+    <meta
+      name="description"
+      content="The portfolio of Raimundo, and aspiring Front-End Web Developer."
+    />
+    <meta name="author" content="F.A. Raimundo" />
+    <meta name="language" content="portuguese" />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="notranslate" />
+    <meta name="rating" content="safe for kids" />
+    <meta name="copyright" content="Copyright Raimundo Tech 2025, Lda" />
+    <meta name="format-detection" content="telephone=yes" />
+    <meta name="HandheldFriendly" content="true" />
+
+    <!--Website Name-->
+    <title>Portfolio do Raimundo</title>
+
+    <!--OPG-->
+    <!--Essential Meta Tags-->
+    <meta property="og:title" content="Portfolio do Raimundo" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/bruschetta-50.webp" />
+    <meta
+      property="og:url"
+      content="https://freddsterius.github.io/cv-portfolio/"
+    />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <!--Non-Essential Meta Tags, But Recommended-->
+    <meta
+      property="og:description"
+      content="The resume/portfolio of Raimundo, and aspiring Front-End Web Developer."
+    />
+    <meta property="og:site_name" content="Portfolio do Raimundo, Lda." />
+    <meta property="twitter:image:alt" content="an image of Raimundo " />
+    <meta property="og:locale" content="pt_MZ" />
+
+    <!--Non-Essential Meta Tags, But Required for Anlytics-->
+    <!--
+    <meta property="fb:app_id" content="your_app_id" />
+    <meta property="twitter:site" content="@website-username" />
+    -->
+
+    <!--Set Up a Tab Icon-->
+    <!--
+    <link rel="icon" href="icons/favicon.ico" />
+    <link rel="icon" href="icons/favicon.svg" type="image/sgv+xml"/>
+    <link rel="apple-touch-icon" href="icons/apple-touch.png" />
+    -->
+
+    <!--CSS Stylesheets-->
     <link rel="stylesheet" href="styles/header.css" />
-    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/home-card.css" />
+    <link rel="stylesheet" href="styles/skills.css" />
+    <link rel="stylesheet" href="styles/portfolio.css" />
     <link rel="stylesheet" href="styles/footer.css" />
   </head>
   <body>
-    <header class="header-container">
+    <header>
       <nav>
         <ul class="navbar">
           <li><a href="#home">Início</a></li>
@@ -20,7 +75,7 @@
     </header>
 
     <main>
-      <div id="home" class="home-card-container">
+      <section id="home" class="home-card-container">
         <div class="home-card-image-container">
           <img
             src="assets/bruschetta-50.webp"
@@ -36,9 +91,9 @@
           <p>📩 hello@example.com</p>
           <p>📞 +258 80 00 00 000</p>
         </div>
-      </div>
+      </section>
 
-      <div id="skills" class="skills-container">
+      <section id="skills" class="skills-container">
         <h2>⚖Habilidades</h2>
         <div class="core-skills-container">
           <h3>🌟 Habilidades Tecnicas</h3>
@@ -167,15 +222,12 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div id="portfolio" class="portfolio-container">
+      <section id="portfolio" class="portfolio-container">
         <h2>📚 Portfolio</h2>
         <div class="all-projects-container">
-          <div
-            style="background-color: red"
-            class="single-group-projects-container"
-          >
+          <div class="single-group-projects-container">
             <h3>HTML/CSS Projects</h3>
 
             <div class="project-cards-container">
@@ -210,9 +262,9 @@
                 <div class="project-card-image-container">
                   <img
                     src="assets/bruschetta-50.webp"
-                    alt="CV/Portfolio thumbnail"
+                    alt="Portfolio thumbnail"
                   />
-                  <p class="project-name">CV/Portfolio</p>
+                  <p class="project-name">Portfolio</p>
                 </div>
 
                 <div class="project-card-text-container">
@@ -262,10 +314,7 @@
             </div>
           </div>
 
-          <div
-            style="background-color: green"
-            class="single-group-projects-container"
-          >
+          <div class="single-group-projects-container">
             <h3>HTML/CSS/JavaScript Projects</h3>
 
             <div class="project-cards-container">
@@ -300,7 +349,7 @@
                 <div class="project-card-image-container">
                   <img
                     src="assets/bruschetta-50.webp"
-                    alt="CV/Portfolio thumbnail"
+                    alt="Portfolio thumbnail"
                   />
                   <p class="project-name">Facebook Clone</p>
                 </div>
@@ -352,10 +401,7 @@
             </div>
           </div>
 
-          <div
-            style="background-color: blue"
-            class="single-group-projects-container"
-          >
+          <div class="single-group-projects-container">
             <h3>React Projects</h3>
 
             <div class="project-cards-container">
@@ -390,7 +436,7 @@
                 <div class="project-card-image-container">
                   <img
                     src="assets/bruschetta-50.webp"
-                    alt="CV/Portfolio thumbnail"
+                    alt="Portfolio thumbnail"
                   />
                   <p class="project-name">Little Lemon</p>
                 </div>
@@ -523,10 +569,7 @@
             </div>
           </div>
 
-          <div
-            style="background-color: yellow"
-            class="single-group-projects-container"
-          >
+          <div class="single-group-projects-container">
             <h3>C Projects</h3>
 
             <div class="project-cards-container">
@@ -561,7 +604,7 @@
                 <div class="project-card-image-container">
                   <img
                     src="assets/bruschetta-50.webp"
-                    alt="CV/Portfolio thumbnail"
+                    alt="Portfolio thumbnail"
                   />
                   <p class="project-name">Cash Program</p>
                 </div>
@@ -640,7 +683,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer class="footer-container">
