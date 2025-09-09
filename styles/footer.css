@@ -17,8 +17,8 @@
   background-color: white;
   padding: 1em;
   border-radius: 50%;
-  width: 64px;
-  height: 64px;
+  width: 48px;
+  height: 48px;
   box-sizing: border-box;
   flex-shrink: 0;
   display: grid;
@@ -26,7 +26,7 @@
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
 }
 .media-logos-container a img {
-  height: 24px;
+  height: 16px;
 }
 
 .media-logos-container a::before {
