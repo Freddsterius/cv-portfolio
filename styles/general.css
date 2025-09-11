@@ -16,7 +16,8 @@ img {
 body {
   font-family: Arial, sans-serif;
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
+  max-width: 100vw;
   grid-template-rows: auto 1fr auto;
 }
 header {
